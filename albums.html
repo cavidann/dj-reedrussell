@@ -12,16 +12,39 @@
 </head>
 
 <body>
+    <style>
+         ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+         ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            background: transparent
+        }
+
+         ::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            background: rgba(255, 0, 122, 0.8);
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+        }
+
+         ::-webkit-scrollbar-thumb:window-inactive {
+            background: rgba(255, 0, 122, 0.4);
+        }
+    </style>
     <!--menu starts-->
     <section class="menu-position">
         <div class="container">
             <div class="row">
                 <div class="menu">
-                    <a href="layout.html">
+                    <a href="home.html">
                         <img src="img/logo.png" alt="img" title="logo">
                     </a>
                     <div class="menu-items ">
-                        <a href="layout.html"><button>Home</button></a>
+                        <a href="home.html"><button>Home</button></a>
                         <a href="events.html"><button>Event</button></a>
                         <a href="albums.html"><button>Albums</button></a>
                     </div>
@@ -170,14 +193,13 @@
         <p>MUSIC
             <a href="https://www.youtube.com/embed/feA64wXhbjo?list=RDGMEMYH9CUrFO7CfLJpaD7UR85wVMAd6SxduZfis" class="gallery">
                 <i class="fa fa-play-circle"></i>
-            </a>
-            festival
+            </a> festival
         </p>
         <div class="modal">
             <div class="modal_inner">
                 <img class="close" src="img/close.png" width="32">
-                <img class="left" style="display: none"src="img/arrow-left.png" width="32">
-                <img class="right"style="display: none" src="img/arrow-right.png" width="32">
+                <img class="left" style="display: none" src="img/arrow-left.png" width="32">
+                <img class="right" style="display: none" src="img/arrow-right.png" width="32">
             </div>
         </div>
     </section>

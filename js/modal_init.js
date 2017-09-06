@@ -1,4 +1,4 @@
-var gallery = new Slider('gallery', {
+var gallery1 = new Slider('gallery1', {
     img_width: 100,
     img_height: 100
 });
