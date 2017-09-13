@@ -52,8 +52,8 @@
                             <a><button class="dropbtn">Videos</button></a>
                             <div class="dropdown-content">
                                 <a href="videos.html">Singles</a>
-                                <a href="videos.html">Vlogs</a>
                                 <a href="videos.html">Remixes</a>
+                                <a href="videos.html">Vlogs</a>
                                 <a href="videos.html">Lesson</a>
                             </div>
                         </div>
@@ -69,16 +69,54 @@
                         </div>
                         <a href="radioshow.html"><button>Radio Show</button></a>
                         <!-- copy album -->
-                        <a href="albums.html"><button>Contact</button></a>
+                        <a href="contact.html"><button>Contact</button></a>
                         <!-- face,ins,twitt,vcontact,youtube,vimeo,email -->
                     </div>
                     <div class="clearfix"></div>
                 </div>
             </div>
         </div>
+        <div id="sidebar">
+            <ul>
+                <li><a href="home.html"><img src="img/logo.png"></a></li>
+                <li><a href="home.html"><b>HOME</b></a></li>
+                <li><a href="event.html"><b>EVENT</b></a></li>
+                <li><a href="albums.html"><b>ALBUMS</b></a></li>
+                <li class="dropdown_galery"><b>VIDEOS<i class="fa fa-angle-down  pull-right" aria-hidden="true"></i>
+                <ul class="galery">
+                    <li><a href="videos.html"><i class="fa fa-angle-right" aria-hidden="true"></i>SINGLES</a></li>
+                    <li><a href="videos.html"><i class="fa fa-angle-right" aria-hidden="true"></i>REMIXES</a></li>
+                    <li><a href="videos.html"><i class="fa fa-angle-right" aria-hidden="true"></i>VLOGS</a></li>
+                    <li><a href="videos.html"><i class="fa fa-angle-right" aria-hidden="true"></i>LESSONS</a></li>                
+                </ul>
+                </b>
+                    <li class="dropdown_blog"><b>MUSICS<i class="fa fa-angle-down  pull-right" aria-hidden="true"></i>
+                
+                <ul class="blog">
+                    <li><a href="musics.html"><i class="fa fa-angle-right" aria-hidden="true"></i>SINGLES</li>
+                    <li><a href="musics.html"><i class="fa fa-angle-right" aria-hidden="true"></i>REMIXES</li>
+                </ul>
+                </b>
+                        <li><a href=""><b>RADIO SHOW</b></a></li>
+                        <li><a href=""><b>CONTACT</b></a></li>
+
+            </ul>
+
+            <div id="sidebar-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
     </section>
     <!--menu ends-->
     <div class="clearfix"></div>
+    <div class="daire">
+        <div class="col-md-12">
+            <p class="col-md-2"><i class="fa fa-angle-up" aria-hidden="true"></i></p>
+        </div>
+    </div>
     <!--page-name starts-->
     <section>
         <div class="back">
@@ -150,30 +188,30 @@
                         </li>
                         <div class="clearfix"></div>
                         <li class="col-md-12 col-sm-12">
-                                <div class="player">
-                                    <audio class="mytrack">
-                                        <source src="music/mzaf.m4a" />
-                                    </audio>
-                                    <nav>
-                                        <div class="defaultBar">
-                                            <div class="progressBar"></div>
+                            <div class="player">
+                                <audio class="mytrack">
+                                    <source src="music/mzaf.m4a" />
+                                </audio>
+                                <nav>
+                                    <div class="defaultBar">
+                                        <div class="progressBar"></div>
+                                    </div>
+                                    <div class="buttons col-md-12 col-sm-12">
+                                        <div class="col-md-4 col-sm-4 col-xs-4 col-12"><span>1. Lorem ipsum dolor sit.</span></div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4" style="text-align:right;">
+                                            <span class="currentTime">0:00</span>
+                                            <span class="fullDuration">/0:29</span>
                                         </div>
-                                        <div class="buttons col-md-12 col-sm-12">
-                                            <div class="col-md-4 col-sm-4 col-xs-4 col-12"><span>1. Lorem ipsum dolor sit.</span></div>
-                                            <div class="col-md-4 col-sm-4 col-xs-4" style="text-align:right;">
-                                                <span class="currentTime">0:00</span>
-                                                <span class="fullDuration">/0:29</span>
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 col-xs-4" style="text-align:right;">
-                                                <button type="button" class="muteButton"></button>
-                                                <button type="button" class="playButton"></button>
-                                            </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4" style="text-align:right;">
+                                            <button type="button" class="muteButton"></button>
+                                            <button type="button" class="playButton"></button>
                                         </div>
-                                    </nav>
-                                </div>
-                            </li>
-                            <div class="clearfix"></div>
-                        
+                                    </div>
+                                </nav>
+                            </div>
+                        </li>
+                        <div class="clearfix"></div>
+
 
 
                     </ol>
@@ -252,6 +290,8 @@
     </section>
     <!--footer ends-->
     <script src="js/player.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/custom.js"></script>
 </body>
 
 </html>

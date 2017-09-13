@@ -1,6 +1,8 @@
 function PLayer(className) {
 var width=document.getElementById('width');
 var left= document.getElementById('container');
+var stop=document.querySelectorAll(".mytrack"); 
+
     var self = this;
     var mytrack;
     var barSize = width.children[0].children[0].offsetWidth;
@@ -47,6 +49,10 @@ var left= document.getElementById('container');
                 window.clearInterval(updateTime);
             }
             else {
+                for(var i=0;i<stop.length;i++){
+                    stop[i].pause();
+                    stop[i].parentNode.children[1].children[1].children[2].children[1].style.backgroundImage = 'url(img/play.png)';
+                }
                 mytrack.play();
                 event.target.style.backgroundImage = 'url(img/pause.png)';
                 updateTime = setInterval(update, 100);

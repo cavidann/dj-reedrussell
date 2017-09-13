@@ -1,5 +1,52 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
+    $('#sidebar-btn').click(function () {
+        console.log($('#sidebar').width());
+        $('#sidebar-btn').toggleClass('visible1');
+        $('#sidebar').toggleClass('visible');
+    });
+    
+    var accordion = document.querySelector('#sidebar');
+    accordion.addEventListener('click', function (event) {
+        var item = event.target;
+        if (item.nextElementSibling.style.display == 'block') {
+            $(".galery").hide(1000);
+            $(".blog").hide(1000);
+        } else {
+            $(".galery").hide(1000);
+            $(".blog").hide(1000);
+            if(item.nextElementSibling.className=="blog"){
+            $(".blog").show(1000);
+            }
+            else if(item.nextElementSibling.className=="galery"){
+            $(".galery").show(1000);
+            }
+            console.log(item.nextElementSibling.className)
+        }
+    });
+
+    $('.daire').click(function(){
+        $('html, body').animate({ scrollTop: 0 }, "slow")
+        return false;
+    })
+
+    $(window).scroll(function () {
+        scroll = $(window).scrollTop();
+        console.log(scroll)
+        if (scroll >= 500) {
+            $(".daire").css({
+                "position": "fixed",
+                "bottom": 40,
+                "right": 10
+            });
+        } else {
+            $(".daire").css({
+                "position": "absolute",
+                "right": "10px",
+                "bottom": "-500px"
+            });
+        }
+    });
 
     var userFeed = new Instafeed({
         get: 'user',
@@ -14,7 +61,7 @@ $(document).ready(function() {
 
     userFeed.run();
 
-    
+
     // This will create a single gallery from all elements that have class "gallery-item"
     $('.gallery').magnificPopup({
         type: 'image',
@@ -23,6 +70,8 @@ $(document).ready(function() {
             enabled: true
         }
     });
+
+
 
 
 });
